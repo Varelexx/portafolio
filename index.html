@@ -1,19 +1,641 @@
+```html
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Portafolio - Jeferson Varela</title>
+
+    <!-- Importación del CSS -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    1. git status
-    # Agrego los cambios realizados a la pila
-    2. git add
-    #realizar los commit
-    3.  git commit -m "Agregando pagina inicial al portafolio"
-    # Descargar cambios
-    4. git pull origin main
-    # subir cambios al servidor
-    5. git push origin maing
+
+    <!-- ==============================
+         NAVEGACIÓN
+    =============================== -->
+
+    <header>
+
+        <nav class="navbar">
+
+            <div class="logo">
+                Varela
+            </div>
+
+            <ul class="menu">
+
+                <li>
+                    <a href="#inicio">Inicio</a>
+                </li>
+
+                <li>
+                    <a href="#sobre-mi">Sobre mí</a>
+                </li>
+
+                <li>
+                    <a href="#proyectos">Proyectos</a>
+                </li>
+
+                <li>
+                    <a href="#contacto">Contacto</a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <!-- ==============================
+             INICIO / HERO
+        =============================== -->
+
+        <section id="inicio" class="hero">
+
+            <div class="hero-overlay">
+
+                <div class="hero-content">
+
+                    <img
+                        src="img/mifotoperfil.png"
+                        alt="Fotografía de Jeferson Varela"
+                        class="foto-perfil"
+                    >
+
+                    <p class="saludo">
+                        Bienvenido a mi portafolio
+                    </p>
+
+                    <h1>
+                        Hola, soy Jeferson Varela
+                    </h1>
+
+                    <h2>
+                        Estudiante de informática y desarrollador de software
+                    </h2>
+
+                    <p class="descripcion-hero">
+                        Desarrollo soluciones web y aplicaciones utilizando
+                        diferentes tecnologías orientadas a resolver
+                        necesidades reales.
+                    </p>
+
+                    <div class="hero-botones">
+
+                        <a href="#proyectos" class="btn">
+                            Ver proyectos
+                        </a>
+
+                        <a href="#contacto" class="btn btn-secundario">
+                            Contactarme
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==============================
+             SOBRE MÍ
+        =============================== -->
+
+        <section id="sobre-mi" class="section">
+
+            <div class="contenedor">
+
+                <h2 class="titulo-seccion">
+                    Sobre mí
+                </h2>
+
+                <p class="subtitulo-seccion">
+                    Conoce un poco más sobre mi perfil académico y profesional.
+                </p>
+
+                <div class="sobre-mi-container">
+
+                    <div class="sobre-mi-texto">
+
+                        <h3>
+                            ¿Quién soy?
+                        </h3>
+
+                        <p>
+                            Soy Jeferson Varela, estudiante de informática
+                            interesado en el desarrollo de software y
+                            las tecnologías de la información.
+                        </p>
+
+                        <p>
+                            Me interesa aprender nuevas tecnologías,
+                            desarrollar aplicaciones y crear soluciones
+                            que permitan resolver problemas de manera
+                            eficiente.
+                        </p>
+
+                        <p>
+                            Actualmente continúo desarrollando mis
+                            conocimientos en programación, bases de datos,
+                            desarrollo web y otras áreas relacionadas
+                            con la informática.
+                        </p>
+
+                    </div>
+
+
+                    <div class="datos-personales">
+
+                        <div class="dato">
+
+                            <strong>
+                                Nombre
+                            </strong>
+
+                            <span>
+                                Jeferson Varela
+                            </span>
+
+                        </div>
+
+
+                        <div class="dato">
+
+                            <strong>
+                                Profesión
+                            </strong>
+
+                            <span>
+                                Estudiante de Informática
+                            </span>
+
+                        </div>
+
+
+                        <div class="dato">
+
+                            <strong>
+                                Área de interés
+                            </strong>
+
+                            <span>
+                                Desarrollo de software
+                            </span>
+
+                        </div>
+
+
+                        <div class="dato">
+
+                            <strong>
+                                Especialidad
+                            </strong>
+
+                            <span>
+                                Desarrollo de aplicaciones y soluciones web
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- HABILIDADES -->
+
+                <div class="habilidades-container">
+
+                    <h3>
+                        Mis habilidades
+                    </h3>
+
+                    <div class="habilidades">
+
+                        <span>
+                            HTML
+                        </span>
+
+                        <span>
+                            CSS
+                        </span>
+
+                        <span>
+                            Java
+                        </span>
+
+                        <span>
+                            Python
+                        </span>
+
+                        <span>
+                            JavaFX
+                        </span>
+
+                        <span>
+                            Bases de datos
+                        </span>
+
+                        <span>
+                            Git
+                        </span>
+
+                        <span>
+                            Desarrollo web
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==============================
+             PROYECTOS
+        =============================== -->
+
+        <section id="proyectos" class="section section-gray">
+
+            <div class="contenedor">
+
+                <h2 class="titulo-seccion">
+                    Mis proyectos
+                </h2>
+
+                <p class="subtitulo-seccion">
+                    Algunos de los proyectos y trabajos que he desarrollado
+                    durante mi formación en informática.
+                </p>
+
+
+                <div class="proyectos-container">
+
+
+                    <!-- PROYECTO 1 -->
+
+                    <article class="proyecto">
+
+                        <div class="proyecto-imagen">
+
+                            <img
+                                src="img/proyecto1.png"
+                                alt="Proyecto de gestión de aeropuertos"
+                            >
+
+                        </div>
+
+                        <div class="proyecto-contenido">
+
+                            <span class="proyecto-categoria">
+                                Desarrollo de software
+                            </span>
+
+                            <h3>
+                                Sistema de Gestión de Aeropuertos
+                            </h3>
+
+                            <p>
+                                Aplicación para gestionar aeropuertos,
+                                rutas de vuelo, pasajeros, boletos y
+                                diferentes operaciones relacionadas
+                                con vuelos.
+                            </p>
+
+                            <div class="proyecto-tecnologias">
+
+                                <span>
+                                    Java
+                                </span>
+
+                                <span>
+                                    JavaFX
+                                </span>
+
+                                <span>
+                                    JSON
+                                </span>
+
+                            </div>
+
+                            <button type="button" onclick="verProyecto('Sistema de Gestión de Aeropuertos');">
+                                Ver proyecto
+                            </button>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- PROYECTO 2 -->
+
+                    <article class="proyecto">
+
+                        <div class="proyecto-imagen">
+
+                            <img
+                                src="img/proyecto2.jpeg"
+                                alt="Proyecto de bases de datos"
+                            >
+
+                        </div>
+
+                        <div class="proyecto-contenido">
+
+                            <span class="proyecto-categoria">
+                                Bases de datos
+                            </span>
+
+                            <h3>
+                                Sistema de Base de Datos
+                            </h3>
+
+                            <p>
+                                Proyecto orientado al diseño y gestión
+                                de información mediante una base de
+                                datos estructurada.
+                            </p>
+
+                            <div class="proyecto-tecnologias">
+
+                                <span>
+                                    SQL
+                                </span>
+
+                                <span>
+                                    Bases de datos
+                                </span>
+
+                                <span>
+                                    Java
+                                </span>
+
+                            </div>
+
+                            <button>
+                                Ver proyecto
+                            </button>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- PROYECTO 3 -->
+
+                    <article class="proyecto">
+
+                        <div class="proyecto-imagen">
+
+                            <img
+                                src="img/proyecto3.jpeg"
+                                alt="Proyecto de desarrollo web"
+                            >
+
+                        </div>
+
+                        <div class="proyecto-contenido">
+
+                            <span class="proyecto-categoria">
+                                Desarrollo web
+                            </span>
+
+                            <h3>
+                                Portafolio Personal
+                            </h3>
+
+                            <p>
+                                Página web personal desarrollada para
+                                presentar mi información, habilidades,
+                                proyectos y formas de contacto.
+                            </p>
+
+                            <div class="proyecto-tecnologias">
+
+                                <span>
+                                    HTML
+                                </span>
+
+                                <span>
+                                    CSS
+                                </span>
+
+                                <span>
+                                    JavaScript
+                                </span>
+
+                            </div>
+
+                            <button>
+                                Ver proyecto
+                            </button>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==============================
+             CONTACTO
+        =============================== -->
+
+        <section id="contacto" class="section">
+
+            <div class="contenedor">
+
+                <h2 class="titulo-seccion">
+                    Contacto
+                </h2>
+
+                <p class="subtitulo-seccion">
+                    Si deseas ponerte en contacto conmigo, puedes utilizar
+                    cualquiera de los siguientes medios.
+                </p>
+
+
+                <div class="contacto-container">
+
+
+                    <!-- INFORMACIÓN DE CONTACTO -->
+
+                    <div class="contacto-info">
+
+                        <h3>
+                            ¡Hablemos!
+                        </h3>
+
+                        <p>
+                            Estoy disponible para conversar sobre proyectos,
+                            oportunidades y temas relacionados con
+                            informática y desarrollo de software.
+                        </p>
+
+
+                        <div class="contacto-dato">
+
+                            <strong>
+                                Nombre
+                            </strong>
+
+                            Jeferson Varela
+
+                        </div>
+
+
+                        <div class="contacto-dato">
+
+                            <strong>
+                                Correo electrónico
+                            </strong>
+
+                            jefersonvarela@gmail.com
+
+                        </div>
+
+
+                        <div class="contacto-dato">
+
+                            <strong>
+                                Teléfono
+                            </strong>
+
+                            8888-8888
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- FORMULARIO -->
+
+                    <form id="formContacto">
+
+                        <div class="form-group">
+
+                            <label for="nombre">
+                                Nombre
+                            </label>
+
+                            <input
+                                type="text"
+                                id="nombre"
+                                name="nombre"
+                                placeholder="Ingrese su nombre"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="correo">
+                                Correo electrónico
+                            </label>
+
+                            <input
+                                type="email"
+                                id="correo"
+                                name="correo"
+                                placeholder="Ingrese su correo"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="asunto">
+                                Asunto
+                            </label>
+
+                            <input
+                                type="text"
+                                id="asunto"
+                                name="asunto"
+                                placeholder="Ingrese el asunto"
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="mensaje">
+                                Mensaje
+                            </label>
+
+                            <textarea
+                                id="mensaje"
+                                name="mensaje"
+                                rows="6"
+                                placeholder="Escriba su mensaje"
+                                required
+                            ></textarea>
+
+                        </div>
+
+
+                        <button
+                            type="submit"
+                            class="btn"
+                        >
+                            Enviar mensaje
+                        </button>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ==============================
+         FOOTER
+    =============================== -->
+
+    <footer>
+
+        <div class="footer-container">
+
+            <p>
+                © <span id="anio"> </span> Jeferson Varela. Todos los derechos reservados.
+            </p>
+
+            <p>
+                Portafolio personal
+            </p>
+
+        </div>
+
+    </footer>
+
+    <script src="js/script.js"></script>
+
+
 </body>
+
 </html>
+```
